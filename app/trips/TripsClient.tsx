@@ -6,12 +6,12 @@ import Heading from "../components/Heading";
 import { useRouter } from "next/navigation";
 import { useCallback, useState } from "react";
 import Container from "../components/Container";
-import { Reservation, User } from "@prisma/client";
+import { Listing, Reservation, User } from "@prisma/client";
 import ListingCard from "../components/Listings/ListingCard";
 
 interface TripsClientProps {
   currentUser?: User | null;
-  reservations: (Reservation & { listing: any })[]; // Ensure listing is included
+  reservations: (Reservation & { listing: Listing[] })[]; // Ensure listing is included
 }
 
 const TripsClient: React.FC<TripsClientProps> = ({
