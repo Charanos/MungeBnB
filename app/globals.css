@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, :root{
+  height: 100%;
+}
+
+.leaflet-top,
+.leaflet-pane,
+.leaflet-bottom,
+.leaflet-control{
+  z-index: 0 !important;
+}
+
+.rdrMonth {
+  width: 100% !important;
+}
+
+.rdrCalendarWrapper {
+  width: 100% !important;
+  font-size: 15px !important;
+}
