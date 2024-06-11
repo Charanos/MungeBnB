@@ -54,7 +54,7 @@ const TripsClient: React.FC<TripsClientProps> = ({
               reservation={reservation}
               actionId={reservation.id}
               currentUser={currentUser}
-              // @ts-ignore
+              // @ts-ignore: Ignore type error for 'data'
               data={reservation.listing}
               actionLabel="Cancel Reservation"
               disabled={deletingId === reservation.id}
